@@ -1,0 +1,13 @@
+.trade {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+    flex-grow: 1;
+}

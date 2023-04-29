@@ -1,0 +1,127 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background: var(--primary);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 2rem;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 3.2rem;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--inactiveText);
+    font-size: var(--medium);
+}
+
+.activeLink {
+    color: var(--secondry);
+    padding: 1.48rem;
+    border-bottom: solid 3px var(--secondry);
+    border-radius: 5px;
+}
+
+.connectWalletBtn {
+
+    padding: .8rem 1.5rem;
+}
+
+.hamburger {
+
+    display: none;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+}
+
+.hamburger>span {
+    display: block;
+    width: 25px;
+    height: 2.5px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 2rem;
+    transform-origin: 0 0;
+    transition: 0.4s;
+}
+
+.is-active>span:nth-child(1) {
+    background-color: var(--secondry);
+    transform: translate(0px, 0px) rotate(45deg);
+}
+
+.is-active>span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.is-active>span:nth-child(3) {
+    background-color: var(--secondry);
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.is-active:hover>span {
+    background-color: var(--secondry);
+}
+
+@media (max-width: 920px) {
+
+    nav {
+        padding: 1rem 2rem;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .connectWalletBtn {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    nav {
+        padding: .5rem 1rem;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .connectWalletBtn {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
