@@ -6,6 +6,7 @@ import TradeContext from "../../context/TradeContext";
 
 function TokenSelectorDialog({ open, onClose }) {
   let [tokenList, setTokenList] = useState([]);
+  let [filterList, setFilterList] = useState([]);
   const [tradeTokenSym, setTradeTokenSym] = useContext(TradeContext);
 
   useEffect(() => {
@@ -26,6 +27,7 @@ function TokenSelectorDialog({ open, onClose }) {
         }
       });
       setTokenList(tokenList);
+      setFilterList(tokenList);
     };
 
     fetchSym();
@@ -33,7 +35,17 @@ function TokenSelectorDialog({ open, onClose }) {
 
   const handleOnChange = (e) => {
     e.preventDefault();
-    tokenList = tokenList.filter((item) => {});
+    const searchKey = e.target.value;
+    if (searchKey === "") {
+      setFilterList(tokenList);
+    } else {
+      const filteredList = filterList.filter((item) => {
+        const itemName = item.baseAsset.toLowerCase();
+        return itemName.includes(searchKey.toLowerCase());
+      });
+
+      setFilterList(filteredList);
+    }
   };
 
   const handleItemClick = (item) => {
@@ -64,7 +76,7 @@ function TokenSelectorDialog({ open, onClose }) {
         </div>
 
         <div className="list">
-          {tokenList.map((item, index) => {
+          {filterList.map((item, index) => {
             const token = TokenMap.get(item.baseAsset);
             return (
               <TokenItem

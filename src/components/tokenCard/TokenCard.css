@@ -89,7 +89,7 @@
 .currentValue .value {
     color: var(--secondry);
     font-weight: bold;
-    font-size: var(--xlarge);
+    font-size: var(--large);
 }
 
 .tokenSelectorDropdown {
@@ -187,4 +187,67 @@ input[type=number] {
 .buyBtn {
     height: 50px;
     width: 100%;
+}
+
+@media (max-width: 480px) {
+    .cardBody {
+        padding: 1rem;
+        gap: 1.3rem;
+        background-color: var(--primary);
+        margin-top: -50px;
+        min-width: 250px;
+        min-height: 470px;
+    }
+
+    form {
+        gap: .5rem;
+    }
+
+    .tokenLogo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tokenLogo>img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .iconSection {
+        width: 80px;
+        height: 80px;
+        background-color: var(--background);
+        display: flex;
+        border-bottom: 1px solid #2E3149;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 9999px;
+    }
+
+    .iconSection::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        top: 40%;
+        left: -23px;
+        height: 21px;
+        width: 25px;
+        box-shadow: 15px -15px 0 15px var(--background);
+        border-top-right-radius: 50px;
+        border-top: 1px solid #2E3149;
+    }
+
+    .iconSection::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        top: 40%;
+        right: -24px;
+        height: 21px;
+        width: 25px;
+        box-shadow: -15px -15px 0 15px var(--background);
+        border-top: 1px solid #2E3149;
+        border-top-left-radius: 50px;
+    }
 }
