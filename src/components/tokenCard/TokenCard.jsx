@@ -1,6 +1,8 @@
 import "./TokenCard.css";
 
 function TokenCard() {
+  const handleDropdown = () => {};
+
   return (
     <div className="card">
       <div className="iconSection">
@@ -14,7 +16,21 @@ function TokenCard() {
           <div className="value">$32568</div>
         </div>
 
-        <div className="tokenSelectorDropdown"></div>
+        <div className="tokenSelectorDropdown" onClick={handleDropdown}>
+          <div className="tokenName">
+            <img
+              className="selectedTokenLogo"
+              src="./token_logo.png"
+              alt="selected token logo"
+            />
+            <div className="name">Ethereum</div>
+          </div>
+          <img
+            className="dropdownArrow"
+            src="./dropdown_arrow.png"
+            alt="dropdown arrow"
+          />
+        </div>
 
         <form>
           <label htmlFor="investAmount">Amount you want to invest</label>
@@ -26,8 +42,13 @@ function TokenCard() {
           <label htmlFor="estimateNumber">
             Estimate Number of ETH You will Get
           </label>
-          <div className="input">
-            <input name="estimateNumber" type="number" placeholder="0.00" />
+          <div className="input disabled">
+            <input
+              disabled
+              name="estimateNumber"
+              type="number"
+              placeholder="0.00"
+            />
           </div>
 
           <button className="buyBtn">Buy</button>

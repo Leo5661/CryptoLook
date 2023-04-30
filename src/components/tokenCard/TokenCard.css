@@ -60,11 +60,11 @@
     align-items: center;
     flex-direction: column;
     padding: 2.5rem;
-    gap: 1rem;
+    gap: 2rem;
     background-color: var(--primary);
     margin-top: -50px;
-    min-width: 470px;
-    min-height: 570px;
+    min-width: 370px;
+    min-height: 470px;
     border-radius: 15px;
     border-top: 1px solid #2E3149;
 }
@@ -82,8 +82,44 @@
 }
 
 .currentValue .value {
-    color: var(--text);
+    color: var(--secondry);
+    font-weight: bold;
     font-size: var(--xlarge);
+}
+
+.tokenSelectorDropdown {
+    width: 100%;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    background-color: var(--secondryLight);
+}
+
+.tokenSelectorDropdown .tokenName {
+    display: flex;
+    padding-left: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tokenSelectorDropdown .tokenName .selectedTokenLogo {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.tokenSelectorDropdown .tokenName .name {
+    color: white;
+    font-size: var(--medium);
+}
+
+.tokenSelectorDropdown .dropdownArrow {
+    width: 1rem;
+    height: .7rem;
+    padding-right: 1rem;
 }
 
 form {
@@ -106,6 +142,12 @@ label {
     width: 100%;
     border: solid 1px var(--secondryLight);
     align-items: center;
+    margin-bottom: 2rem;
+}
+
+.disabled {
+    border-radius: 10px;
+    background-color: var(--secondryLight);
 }
 
 .input .currency {
@@ -125,6 +167,9 @@ input {
     outline: none;
 }
 
+
+
 .buyBtn {
+    height: 50px;
     width: 100%;
 }
