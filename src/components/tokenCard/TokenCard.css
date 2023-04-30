@@ -234,10 +234,10 @@ input[type=number] {
         content: "";
         position: absolute;
         bottom: 0;
-        top: 50%;
+        top: 51%;
         left: -20px;
         height: 20px;
-        width: 26px;
+        width: 25px;
         box-shadow: 15px -15px 0 15px var(--background);
         border-top-right-radius: 50px;
         border-top: 1px solid #2E3149;
@@ -247,10 +247,10 @@ input[type=number] {
         content: "";
         position: absolute;
         bottom: 0;
-        top: 50%;
+        top: 51%;
         right: -20px;
         height: 20px;
-        width: 26px;
+        width: 25px;
         box-shadow: -15px -15px 0 15px var(--background);
         border-top: 1px solid #2E3149;
         border-top-left-radius: 50px;
