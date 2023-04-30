@@ -1,0 +1,25 @@
+.tokenItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .6rem 0rem;
+    gap: 1rem;
+    border-radius: 3px;
+}
+
+.selected {
+    background-color: var(--selectedToken);
+}
+
+.tName {
+    flex-grow: 1;
+    font-size: var(--medium);
+    color: white;
+}
+
+.tokenItem>.tokenImg {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 9999px;
+}

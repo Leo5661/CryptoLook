@@ -1,7 +1,19 @@
 import "./TokenCard.css";
+import useWebSocket, { ReadyState } from "react-use-websocket";
 
-function TokenCard() {
-  const handleDropdown = () => {};
+function TokenCard({ onDropdownClick }) {
+  const socketUrl = "wss://stream.binance.com:9443";
+
+  const { sendJsonMessage, lastJsonMessage, readyState } =
+    useWebSocket(socketUrl);
+
+  const connectionStatus = {
+    [ReadyState.CONNECTING]: "Connecting",
+    [ReadyState.OPEN]: "Open",
+    [ReadyState.CLOSING]: "Closing",
+    [ReadyState.CLOSED]: "Closed",
+    [ReadyState.UNINSTANTIATED]: "Uninstantiated",
+  }[readyState];
 
   return (
     <div className="card">
@@ -16,7 +28,7 @@ function TokenCard() {
           <div className="value">$32568</div>
         </div>
 
-        <div className="tokenSelectorDropdown" onClick={handleDropdown}>
+        <div className="tokenSelectorDropdown" onClick={onDropdownClick}>
           <div className="tokenName">
             <img
               className="selectedTokenLogo"

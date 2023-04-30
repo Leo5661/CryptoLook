@@ -12,6 +12,9 @@
   --border: #D9D9D9;
   --inputBg: #6E56F840;
   --inputText: #6F6F7E;
+  --dialogBg: #181627;
+  --transparentDialog: #1c1731d4;
+  --selectedToken: #1B192D;
   /* Text Size */
 
   --small: clamp(.8rem, 1vw, .9rem);
