@@ -54,6 +54,11 @@
     align-items: center;
 }
 
+.tokenLogo>img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
 .cardBody {
     display: flex;
     justify-content: end;
@@ -167,6 +172,16 @@ input {
     outline: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+}
 
 
 .buyBtn {

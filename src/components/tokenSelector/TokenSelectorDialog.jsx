@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./TokenSelectorDialog.css";
 import { TokenMap } from "../../utils/TokenMap";
 import TokenItem from "../tokenItem/TokenItem";
+import TradeContext from "../../context/TradeContext";
 
 function TokenSelectorDialog({ open, onClose }) {
   let [tokenList, setTokenList] = useState([]);
-  const [isSelected, setIsSelected] = useState(false);
+  const [tradeTokenSym, setTradeTokenSym] = useContext(TradeContext);
 
   useEffect(() => {
     const fetchSym = async () => {
@@ -36,7 +37,8 @@ function TokenSelectorDialog({ open, onClose }) {
   };
 
   const handleItemClick = (item) => {
-    console.log(item);
+    setTradeTokenSym(item.baseAsset);
+    onClose();
   };
 
   if (!open) return null;
@@ -70,7 +72,7 @@ function TokenSelectorDialog({ open, onClose }) {
                 key={index}
                 src={token.logo}
                 name={token.name}
-                isSelected={isSelected}
+                isSelected={token.sym === tradeTokenSym}
               />
             );
           })}

@@ -13,7 +13,7 @@ function Trade() {
 
   return (
     <div className="trade">
-      <TokenSelectorDialog open={isOpen} onClick={handleClick} />
+      <TokenSelectorDialog open={isOpen} onClose={handleClick} />
       <Nav />
       <div className="body">
         <TokenCard onDropdownClick={handleClick} />

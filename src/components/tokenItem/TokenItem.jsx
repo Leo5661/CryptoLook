@@ -1,6 +1,5 @@
+import { IMAGE_URL_64 } from "../../constants/Constants";
 import "./TokenItem.css";
-
-const IMAGE_URL = "https://s2.coinmarketcap.com/static/img/coins/64x64";
 
 function TokenItem({ src, name, isSelected, onClick }) {
   return (
@@ -10,7 +9,7 @@ function TokenItem({ src, name, isSelected, onClick }) {
     >
       <img
         className="tokenImg"
-        src={`${IMAGE_URL}/${src}.png`}
+        src={`${IMAGE_URL_64}/${src}.png`}
         alt="Token Icon"
       />
       <div className="tName">{name}</div>

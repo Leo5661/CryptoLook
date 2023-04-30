@@ -5,6 +5,7 @@ export const TokenMap = new Map([
       logo: "1",
       name: "Bitcoin",
       symbol: "BTCUSDT",
+      sym: "BTC",
     },
   ],
   [
@@ -13,6 +14,7 @@ export const TokenMap = new Map([
       logo: "1027",
       name: "Ethereum",
       symbol: "ETHUSDT",
+      sym: "ETH",
     },
   ],
   [
@@ -21,6 +23,7 @@ export const TokenMap = new Map([
       logo: "1831",
       name: "Bitcoin Cash",
       symbol: "BCHUSDT",
+      sym: "BCH",
     },
   ],
   [
@@ -29,6 +32,7 @@ export const TokenMap = new Map([
       logo: "1839",
       name: "BNB",
       symbol: "BNBUSDT",
+      sym: "BNB",
     },
   ],
   [
@@ -37,6 +41,7 @@ export const TokenMap = new Map([
       logo: "3408",
       name: "USD Coin",
       symbol: "USDCUSDT",
+      sym: "USDC",
     },
   ],
   [
@@ -45,6 +50,7 @@ export const TokenMap = new Map([
       logo: "52",
       name: "XRP",
       symbol: "XRPUSDT",
+      sym: "XRP",
     },
   ],
   [
@@ -53,6 +59,7 @@ export const TokenMap = new Map([
       logo: "2010",
       name: "Cardano",
       symbol: "ADAUSDT",
+      sym: "ADA",
     },
   ],
   [
@@ -61,6 +68,7 @@ export const TokenMap = new Map([
       logo: "74",
       name: "Dogecoin",
       symbol: "DOGEUSDT",
+      sym: "DOGE",
     },
   ],
   [
@@ -69,6 +77,7 @@ export const TokenMap = new Map([
       logo: "5426",
       name: "Solana",
       symbol: "SOLUSDT",
+      sym: "SOL",
     },
   ],
   [
@@ -77,6 +86,7 @@ export const TokenMap = new Map([
       logo: "3890",
       name: "Polygon",
       symbol: "MATICUSDT",
+      sym: "MATIC",
     },
   ],
   [
@@ -85,6 +95,7 @@ export const TokenMap = new Map([
       logo: "6636",
       name: "Polkadot",
       symbol: "DOTUSDT",
+      sym: "DOT",
     },
   ],
   [
@@ -93,6 +104,7 @@ export const TokenMap = new Map([
       logo: "2",
       name: "Litecoin",
       symbol: "LTCUSDT",
+      sym: "LTC",
     },
   ],
   [
@@ -101,6 +113,7 @@ export const TokenMap = new Map([
       logo: "4687",
       name: "Binance USD",
       symbol: "BUSDUSDT",
+      sym: "BUSD",
     },
   ],
   [
@@ -109,6 +122,7 @@ export const TokenMap = new Map([
       logo: "1958",
       name: "TRON",
       symbol: "TRXUSDT",
+      sym: "TRX",
     },
   ],
   [
@@ -117,6 +131,7 @@ export const TokenMap = new Map([
       logo: "5994",
       name: "Shiba Inu",
       symbol: "SHIBUSDT",
+      sym: "SHIB",
     },
   ],
   [
@@ -125,6 +140,7 @@ export const TokenMap = new Map([
       logo: "5805",
       name: "Avalanche",
       symbol: "AVAXUSDT",
+      sym: "AVAX",
     },
   ],
   [
@@ -133,6 +149,7 @@ export const TokenMap = new Map([
       logo: "328",
       name: "Monero",
       symbol: "XMRUSDT",
+      sym: "XMR",
     },
   ],
   [
@@ -141,6 +158,7 @@ export const TokenMap = new Map([
       logo: "3717",
       name: "Wrapped Bitcoin",
       symbol: "WBTCUSDT",
+      sym: "WBTC",
     },
   ],
   [
@@ -149,6 +167,7 @@ export const TokenMap = new Map([
       logo: "1975",
       name: "Chainlink",
       symbol: "LINKUSDT",
+      sym: "LINK",
     },
   ],
   [
@@ -157,6 +176,7 @@ export const TokenMap = new Map([
       logo: "3794",
       name: "Cosmos",
       symbol: "ATOMUSDT",
+      sym: "ATOM",
     },
   ],
 ]);
