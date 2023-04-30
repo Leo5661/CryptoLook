@@ -196,7 +196,7 @@ input[type=number] {
         background-color: var(--primary);
         margin-top: -50px;
         min-width: 250px;
-        min-height: 470px;
+        min-height: 460px;
     }
 
     form {
